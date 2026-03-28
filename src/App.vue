@@ -18,17 +18,13 @@ import Card from './components/Card.vue'
   <Card title="Performance" label="View Performance Metrics" />
 </div>
 </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2026 Dashboard System. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
 </template>
-
-
-
-
-
-
-
-
 
 <style>
 .dashboard {
@@ -69,6 +65,13 @@ import Card from './components/Card.vue'
   background: #0f172a;
   color: white;
   padding: 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 
 .cards {
@@ -137,7 +140,5 @@ button:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
-
 }
 </style>
